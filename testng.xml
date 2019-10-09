@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Loan depatment">
+  <test name="Loan">
+    <classes>
+      <class name="testng.CarLoan"/>
+      <class name="testng.HomeLoan"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Credit card">
+  <classes>
+     <class name="testng.CreditCard"/>
+  </classes>
+ </test>
+ 
+ <test name="Login">
+   <classes>
+       <class name="testng.Login">
+       </class>
+   </classes> 
+ </test> 
+</suite> <!-- Suite -->

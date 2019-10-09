@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Bank form">
+  <test name="Smoke testing">
+     <groups>
+        <run>
+           <include name="smokeProcess"/>
+        </run>
+     </groups>
+    <classes>
+      <class name="testng.CarLoan"/>
+      <class name="testng.HomeLoan"/>
+     <class name="testng.CreditCard"/>
+     <class name="testng.Login"/>
+       </classes> 
+ </test> 
+</suite> <!-- Suite -->

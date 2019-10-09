@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Loan depatment">
+  <test name="Loan">
+    <classes>
+      <class name="testng.CarLoan">
+         <methods>
+             <include name="apply"/>
+         </methods>
+      </class>
+      
+      <class name="testng.HomeLoan">
+          <methods>
+              <include name="onhold"/>
+          </methods>      
+      </class>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Credit card">
+  <classes>
+     <class name="testng.CreditCard">
+       <methods>
+          <include name="apply"/>
+       </methods>
+     </class>
+  </classes>
+ </test>
+ 
+ <test name="Login">
+   <classes>
+       <class name="testng.Login">
+          <methods>
+             <include name="webLogin"/>
+          </methods>
+       </class>
+   </classes> 
+ </test> 
+</suite> <!-- Suite -->

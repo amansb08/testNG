@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [User Login]">
+  <parameter name="URL" value="https://www.kotak.com/j1001mp/netapp/MainPage.jsp"/>
+  <test thread-count="5" name="Bank(failed)">
+    <parameter name="OTP" value="123456"/>
+    <parameter name="NickName" value="amandeep"/>
+    <classes>
+      <class name="testng.BankLoginGetData">
+        <methods>
+          <include name="clickSecureLogin"/>
+          <include name="clickLogin"/>
+          <include name="webLogin"/>
+          <include name="enterNickName"/>
+          <include name="enterOTP"/>
+          <include name="webLogout"/>
+        </methods>
+      </class> <!-- testng.BankLoginGetData -->
+    </classes>
+  </test> <!-- Bank(failed) -->
+</suite> <!-- Failed suite [User Login] -->
